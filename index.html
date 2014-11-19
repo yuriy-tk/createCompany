@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Adloud</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
+</head>
+<body>
+
+
+<div id="main" class="row container">
+<form role="form" id="form">
+
+	<div class="col-xs-6">
+
+		<div class="settings">
+			<p>Введите название компании:</p>
+			<input type="text" name="company_name" placeholder="exampe name" />
+			<div class="subtext">Осталось символов: <span></span></div>
+		</div>
+
+		<div class="settings">
+			<p>Введите адрес рекламируемого сайта:</p>
+			<input type="text" name="site_url" placeholder="example.com" />
+		</div>
+
+		<div class="settings">
+			<p>Планируете ли вы использовать контент для взрослых:</p>
+			<input type="radio" id="radio1" name="adult_content" value="Да" class="css-radio" /><label for="radio1" class="css-label-radio">Да</label>
+			<input type="radio" id="radio2" name="adult_content" value="Нет" class="css-radio" /><label for="radio2" class="css-label-radio">Нет</label>
+		</div>
+
+		<div class="collapse in settings">
+			<p >География</p>
+			<span class="toggle float_none daredevel-tree-anchor ui-icon ui-icon-triangle-1-e"></span>
+			<div class="subtext">Выбор страны и города для показа обьявления</div>
+				<div id="tree" class="content ui-widget ui-widget-content daredevel-tree">
+					    <ul style="padding:0;">
+					        <li class="collapsed"><input type="checkbox" id="a1" class="css-checkbox"><label for="a1" class="css-label">Все страны</label>
+					            <ul>
+					                <li><input type="checkbox" id="a2" class="css-checkbox"><label for="a2" class="css-label">Украина</label>
+					                    <ul>
+					                        <li><input type="checkbox" name="urkaine_regions" id="a3" class="css-checkbox" value="Киевская обл."><label for="a3" class="css-label">Киевская обл.</label>
+					                        <li><input type="checkbox" name="urkaine_regions" id="a4" class="css-checkbox" value="Львовская обл."><label for="a4" class="css-label">Львовская обл.</label>
+					                        <li><input type="checkbox" name="urkaine_regions" id="a5" class="css-checkbox" value="Донецкая обл."><label for="a5" class="css-label">Донецкая обл.</label>
+					                        <li><input type="checkbox" name="urkaine_regions" id="a6" class="css-checkbox" value="Николаевская обл."><label for="a6" class="css-label">Николаевская обл.</label>
+					                        <li><input type="checkbox" name="urkaine_regions" id="a6_" class="css-checkbox" value="Крым"><label for="a6_" class="css-label">Крым</label>
+					                    </ul>
+					      
+					                <li><input type="checkbox" id="a7" class="css-checkbox"><label for="a7" class="css-label">Россия</label>
+					                    <ul>
+					                        <li><input type="checkbox" name="rus_regions" id="a8" class="css-checkbox" value="Московская обл."><label for="a8" class="css-label">Московская обл.</label>
+					                        <li><input type="checkbox" name="rus_regions" id="a9" class="css-checkbox" value="Краснодарский край"><label for="a9" class="css-label">Краснодарский край</label>
+					                        <li><input type="checkbox" name="rus_regions" id="a10" class="css-checkbox" value="Камчатка"><label for="a10" class="css-label">Камчатка</label>
+					                        <li><input type="checkbox" name="rus_regions" id="a11" class="css-checkbox" value="Ленинградская обл."><label for="a11" class="css-label">Ленинградская обл.</label>
+					                    </ul>
+					                <li><input type="checkbox" id="a12" class="css-checkbox"><label for="a12" class="css-label">Беларусь</label>
+					                    <ul>
+					                        <li><input type="checkbox" name="belrus_regions" id="a13" class="css-checkbox" value="Минск"><label for="a13" class="css-label">Минск</label>
+					                        <li><input type="checkbox" name="belrus_regions" id="a14" class="css-checkbox" value="Гомель"><label for="a14" class="css-label">Гомель</label>
+					                        <li><input type="checkbox" name="belrus_regions" id="a15" class="css-checkbox" value="Брест"><label for="a15" class="css-label">Брест</label>
+					                    </ul>
+					            </ul>
+					    </ul>
+</div>
+		</div>
+
+		<div class="collapse in settings">
+			<p>Демография</p>
+			<span class="toggle float_none daredevel-tree-anchor ui-icon ui-icon-triangle-1-e"></span>
+			<div class="subtext">Выбор пола, возраста</div>
+			<div class="content" >Тут будет Ваш контент</div>
+		</div>
+
+		<div class="settings">
+			<p>Выберите пол:</p>
+			<input type="radio" id="radio3" name="gender" value="Любой" class="css-radio" /><label for="radio3" class="css-label-radio">Любой</label>
+			<input type="radio" id="radio4" name="gender" value="Мужской" class="css-radio" /><label for="radio4" class="css-label-radio">Мужской</label>
+			<input type="radio" id="radio5" name="gender" value="Женский" class="css-radio" /><label for="radio5" class="css-label-radio">Женский</label>
+		</div>
+
+		<div class="collapse in settings">
+			<p>Дополнительные настройки</p>
+			<span class="toggle float_none daredevel-tree-anchor ui-icon ui-icon-triangle-1-e"></span>
+			<div class="subtext">Временной таргетинг,черные и белые списки</div>
+			<div class="content" >Тут будет Ваш контент</div>
+		</div>
+
+		<div class="collapse in settings">
+			<p>Планирование бюджета компании</p>
+			<span class="toggle float_none daredevel-tree-anchor ui-icon ui-icon-triangle-1-e"></span>
+			<div class="subtext">Настройка лимитов компании</div>
+			<div class="content" >Тут будет Ваш контент</div>
+		</div>
+
+		<div class="settings">
+			<p>Установите суммарный бюджет рекламной компании:</p>
+			<input type="text" name="sum_budget" placeholder="10 000 руб."/>
+		</div>
+
+		<div class="settings">
+			<p>Установите дневной бюджет рекламной компании:</p>
+			<input type="text" name="daily_budget" placeholder="1000 руб." />
+		</div>
+
+	</div>
+
+	<div class="col-xs-6">
+
+		<div class="settings">
+			<p>Выберите тематику Вашей рекламной кампании: </p>
+			<select name="subject">
+				<option selected="true">Компьютерные игры</option>
+				<option>Компьютерные игры 1</option>
+				<option>Компьютерные игры 2</option>
+				<option>Компьютерные игры 3</option>
+				<option>Компьютерные игры 4</option>
+			</select>
+		</div>
+
+		<div class="table-responsive">
+	      <table class="table table-bordered table-hover" >
+	        <thead>
+	          <tr>
+	            <th><input type="checkbox" id="all" class="css-checkbox checkAllCat"/><label for="all" class="css-label"></label></th>
+	            <th>Категория</th>
+	            <th class="centr">Минимальн. Цена</th>
+	            <th class="centr">Рекомендов. Цена</th>
+	            <th class="centr">Установлен. Цена</th>
+	          </tr>
+	        </thead>
+	        <tbody id="cat-tbody">
+
+	        </tbody>
+	      </table>
+	    </div>
+	</div>
+</form>
+
+	<button id="create_company" class="btn">
+		<span id="img"></span>
+		<span style="margin: -17px 0 0 31px;">Создать новую кампанию</span>
+	</button>
+
+</div>
+
+
+
+
+<script src="js/jquery-1.9.0.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/tree.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>
